@@ -1,0 +1,143 @@
+<h2 class="sr-only">Comparison of job classes identified by Claude (inline) vs Opus 4.6 (API)</h2>
+<style>
+.row{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:0;align-items:stretch;border-bottom:0.5px solid var(--color-border-tertiary);min-height:44px}
+.row:last-child{border-bottom:none}
+.cell{padding:8px 12px;font-size:13px;color:var(--color-text-primary);display:flex;align-items:center}
+.cell.l{justify-content:flex-end;text-align:right}
+.cell.r{justify-content:flex-start;text-align:left}
+.link{display:flex;align-items:center;justify-content:center;font-size:16px}
+.hdr{font-weight:500;font-size:14px;color:var(--color-text-secondary);padding:6px 12px;border-bottom:0.5px solid var(--color-border-secondary)}
+.hdr.l{text-align:right}
+.badge{display:inline-block;padding:2px 8px;border-radius:var(--border-radius-md);font-size:11px;font-weight:500;margin-left:6px;vertical-align:middle}
+.badge.new{background:var(--color-background-info);color:var(--color-text-info)}
+.badge.split{background:var(--color-background-warning);color:var(--color-text-warning)}
+.badge.same{background:var(--color-background-success);color:var(--color-text-success)}
+.badge.merged{background:#EEEDFE;color:#534AB7}
+.section{padding:10px 12px;font-size:12px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:0.5px;background:var(--color-background-secondary);grid-column:1/-1}
+.num{color:var(--color-text-tertiary);font-size:12px;min-width:18px;display:inline-block}
+</style>
+
+<div style="padding:1rem 0">
+
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:0;margin-bottom:2px">
+<div class="hdr l">Claude (inline) — 15 classes</div>
+<div class="hdr" style="text-align:center"></div>
+<div class="hdr">Opus 4.6 (API) — 16 classes</div>
+</div>
+
+<div class="section">Strong matches — same class, same scope</div>
+
+<div class="row">
+<div class="cell l"><span class="num">1.</span> Collections Intern / Digitization Intern</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">16.</span> Intern / Entry-Level Trainee <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">3.</span> Archivist / Project Archivist</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">11.</span> Archivist / Librarian <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">4.</span> Curatorial / Collections Associate (PhD)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">3.</span> Curatorial Associate <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">10.</span> Senior CM / Director of Collections</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">9.</span> Director / VP of Collections <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">11.</span> Curator (Tenure-Track / Research)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">5.</span> Research Curator / Faculty Curator <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">15.</span> Postdoc (Biodiversity Informatics)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">12.</span> Postdoc (Biodiversity Informatics) <span class="badge same">match</span></div>
+</div>
+
+<div class="section">Splits and merges — same data, different grouping</div>
+
+<div class="row">
+<div class="cell l"><span class="num">2.</span> Curatorial / Museum Technician</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">2.</span> Museum Specialist / Curatorial Asst <span class="badge split">split</span></div>
+</div>
+<div class="row">
+<div class="cell l" style="color:var(--color-text-tertiary);font-style:italic">(merged into #2)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">15.</span> Herbarium Curatorial Asst / Tech <span class="badge split">split</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">5.</span> Collections Manager</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">1.</span> Collections Manager <span class="badge same">match</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">6.</span> Herbarium Curator / CM (Botany)</div>
+<div class="link">↔</div>
+<div class="cell r" style="color:var(--color-text-tertiary);font-style:italic">(folded into #1 and #15) <span class="badge merged">merged</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">7.</span> Digitization Manager / Supervisor</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">14.</span> Digitization Project Manager <span class="badge split">split</span></div>
+</div>
+<div class="row">
+<div class="cell l" style="color:var(--color-text-tertiary);font-style:italic">(merged into #7)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">8.</span> Digitization Technician / Specialist <span class="badge split">split</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">8.</span> Biodiversity Informatics Specialist</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">7.</span> Software Developer / Engineer <span class="badge split">split</span></div>
+</div>
+<div class="row">
+<div class="cell l" style="color:var(--color-text-tertiary);font-style:italic">(merged into #8)</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">13.</span> Biodiversity Data Analyst / Scientist <span class="badge split">split</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">9.</span> CM / Curator (Researcher-Track)</div>
+<div class="link">↔</div>
+<div class="cell r" style="color:var(--color-text-tertiary);font-style:italic">(absorbed into #1 and #5) <span class="badge merged">merged</span></div>
+</div>
+
+<div class="row">
+<div class="cell l"><span class="num">12.</span> Collections Info Mgr / DB Admin</div>
+<div class="link">↔</div>
+<div class="cell r"><span class="num">6.</span> Collections Informatics Mgr / DB Mgr <span class="badge same">match</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">13.</span> Biodiversity Informatics Mgr / Director</div>
+<div class="link">↔</div>
+<div class="cell r" style="color:var(--color-text-tertiary);font-style:italic">(folded into #9 Director) <span class="badge merged">merged</span></div>
+</div>
+<div class="row">
+<div class="cell l"><span class="num">14.</span> VP Collections & Research</div>
+<div class="link">↔</div>
+<div class="cell r" style="color:var(--color-text-tertiary);font-style:italic">(folded into #9 Director) <span class="badge merged">merged</span></div>
+</div>
+
+<div class="section">Unique to one version</div>
+
+<div class="row">
+<div class="cell l" style="color:var(--color-text-tertiary);font-style:italic">(no equivalent)</div>
+<div class="link"></div>
+<div class="cell r"><span class="num">4.</span> Assistant Collections Manager <span class="badge new">new</span></div>
+</div>
+<div class="row">
+<div class="cell l" style="color:var(--color-text-tertiary);font-style:italic">(no equivalent)</div>
+<div class="link"></div>
+<div class="cell r"><span class="num">10.</span> Registrar <span class="badge new">new</span></div>
+</div>
+
+</div>
