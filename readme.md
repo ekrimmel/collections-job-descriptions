@@ -3,7 +3,7 @@
 For the past decade or so, I have been saving PDFs of job postings for positions working (mostly) in or around biodiversity collections, e.g. in natural history museums or at university-based collections. I asked Claude to help transcribe, parse, and synthesis this dataset of 249 postings. For $24.02 ($11 of which was me making one dumb mistake) and 3 hours of my time (with me starting at zero, asking Claude to tell me how to ask Claude to do the thing), I got:
 
 1. A nice CSV of every job posting with data transcribed and parsed: [job_descriptions.csv](job_descriptions.csv)
-1. Two syntheses of how the data above translate into more generic job classes: one using Claude's [Sonnet 4.6 model]() and the other using the premium [Opus 4.6 model]()
+1. Two syntheses of how the data above translate into more generic job classes: one using Claude's [Sonnet 4.6 model](job_class_synthesis_sonnet4-6.md) and the other using the premium [Opus 4.6 model](job_class_synthesis_opus4-6.md)
 1. A comparison of the two syntheses: [claude_models_comparison.md](claude_models_comparison.md)
 
 Claude also had some high-level thoughts that sum it all up in a nutshell:
